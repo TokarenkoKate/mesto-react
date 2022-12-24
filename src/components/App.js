@@ -29,7 +29,6 @@ function App() {
     setIsAddPlacePopupOpen(false);
     setIsEditAvatarPopupOpen(false);
     setIsImagePopupOpen(false);
-    setSelectedCard({});
   }
 
   function handleCardClick(card) {
@@ -49,7 +48,7 @@ function App() {
           />
           <Footer />
 
-          <PopupWithForm name={'edit-profile'} title={'Редактировать профиль'} isOpen={ isEditProfilePopupOpen } onClose={ closeAllPopups } >
+          <PopupWithForm name={'edit-profile'} title={'Редактировать профиль'} buttonText={'Сохранить'} isOpen={ isEditProfilePopupOpen } onClose={ closeAllPopups } >
               <input 
                 type="text" className="form__input form__input_type_name" 
                 name="name" id="name-input"
@@ -64,7 +63,7 @@ function App() {
               <span className="form__input-error job-input-error"></span>
           </PopupWithForm>
           
-          <PopupWithForm name={'add-card'} title={'Новое место'} isOpen={ isAddPlacePopupOpen } onClose={ closeAllPopups }>
+          <PopupWithForm name={'add-card'} title={'Новое место'} buttonText={'Создать'} isOpen={ isAddPlacePopupOpen } onClose={ closeAllPopups }>
             <input 
               type="text" className="form__input form__input_type_place-name" 
               name="name" id="place-name-input"
@@ -77,7 +76,7 @@ function App() {
             <span className="form__input-error link-input-error"></span>
           </PopupWithForm>
 
-          <PopupWithForm name={'edit-avatar'} title={'Обновить аватар'} isOpen={ isEditAvatarPopupOpen } onClose={ closeAllPopups }>
+          <PopupWithForm name={'edit-avatar'} title={'Обновить аватар'} buttonText={'Сохранить'} isOpen={ isEditAvatarPopupOpen } onClose={ closeAllPopups }>
             <input 
               type="url" className="form__input form__input_type_avatar" 
               name="avatar" id="avatar-input"
