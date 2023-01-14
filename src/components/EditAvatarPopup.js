@@ -10,15 +10,14 @@ function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar }) {
         onUpdateAvatar({
             avatar: userAvatar.current.value
         });
-        onClose();
         userAvatar.current.value = '';
     };
 
     return (
         <PopupWithForm 
-            name={'edit-avatar'} 
-            title={'Обновить аватар'} 
-            buttonText={'Сохранить'} 
+            name='edit-avatar' 
+            title='Обновить аватар' 
+            buttonText='Сохранить' 
             isOpen={isOpen} 
             onClose={onClose}
             onSubmit={handleSubmit}>

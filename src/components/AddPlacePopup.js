@@ -12,7 +12,6 @@ function AddPlacePopup({ isOpen, onClose, onAddNewPlace }) {
             name,
             link
         });
-        onClose();
         setName('');
         setLink('');
     }
@@ -27,9 +26,9 @@ function AddPlacePopup({ isOpen, onClose, onAddNewPlace }) {
 
     return (
         <PopupWithForm 
-            name = {'add-card'} 
-            title = {'Новое место'} 
-            buttonText = {'Создать'} 
+            name = 'add-card' 
+            title = 'Новое место'
+            buttonText = 'Создать' 
             isOpen = {isOpen} 
             onClose = {onClose}
             onSubmit = {handleSubmit}

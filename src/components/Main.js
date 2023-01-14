@@ -41,15 +41,15 @@ function Main({
 
             <section className="content" aria-label="Карточки">
                 <ul className="cards">
-                    {cardsList.map((card) => {
-                        return <Card
+                    {cardsList.map((card) => (
+                        <Card
                             key={card._id}
                             card={card}
                             onCardClick={onCardClick}
                             onCardLike={onCardLike}
                             onCardDelete={onCardDelete}
                         />
-                    })}
+                    ))}
                 </ul>
             </section>
         </main>

@@ -100,40 +100,6 @@ class Api {
             });
     }
 
-    // addLike(cardId) {
-    //     return fetch(`${this._url}/v1/cohort-55/cards/${cardId}/likes`, {
-    //         headers: this._headers,
-    //         method: 'PUT',
-    //     })
-    //         .then((response) => {
-    //             if (response.ok) {
-    //                 return response.json();
-    //             } else {
-    //                 Promise.reject(`Ошибка: ${response.status}`);
-    //             }
-    //         })
-    //         .catch((err) => {
-    //             console.log(err);
-    //         });
-    // }
-
-    // removeLike(cardId) {
-    //     return fetch(`${this._url}/v1/cohort-55/cards/${cardId}/likes`, {
-    //         headers: this._headers,
-    //         method: 'DELETE'
-    //     })
-    //         .then((response) => {
-    //             if (response.ok) {
-    //                 return response.json();
-    //             } else {
-    //                 Promise.reject(`Ошибка: ${response.status}`);
-    //             }
-    //         })
-    //         .catch((err) => {
-    //             console.log(err);
-    //         });
-    // }
-
     changeLikeCardStatus(cardId, isLiked) {
         let method = isLiked ? 'PUT' : 'DELETE';
 
