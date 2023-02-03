@@ -5,6 +5,9 @@
 
 ---
 ## Использованные технологии.
+HTML, CSS, flexbox, grid, БЭМ, JavaScript, React JS, React hooks
+
+## Функциональность
 * Разработка проекта с библиотекой __React__ 
 * Хуки __useState__, __useEffect__, __useContext__, __useRef__
 * Работа с __API__, загрузка карточек, информации о пользователе с сервера
